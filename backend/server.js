@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const dotenv = require("dotenv").config()
+console.log("Connection string:", process.env.CONNECTION_STRING);
 const connectDb = require("./config/connectionDb")
 const cors = require("cors")
 
