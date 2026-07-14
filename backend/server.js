@@ -9,9 +9,10 @@ connectDb()
 
 app.use(express.json())
 app.use(cors({
-    origin: "*", // temporary — replace with actual Vercel URL after deploy
+    origin: "https://food-recipe-xxxx.vercel.app",
     credentials: true
 }));
+
 app.use(express.static("public"))
 
 app.use("/", require("./routes/user"))
