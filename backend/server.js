@@ -8,8 +8,9 @@ const PORT = process.env.PORT || 3000
 connectDb()
 
 app.use(express.json())
+
 app.use(cors({
-    origin: "https://food-recipe-xxxx.vercel.app",
+    origin: "https://food-recipe-iota-teal.vercel.app",
     credentials: true
 }));
 
